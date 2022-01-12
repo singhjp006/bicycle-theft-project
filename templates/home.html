@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="static/css/styles.css">   
+      </head>   
+    <body>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="">
+          <h1>Predict with us</h1>
+        </div><br>
+       
+        
+        <form method="POST", action="{{url_for('predict')}}">
+            <b> Occurrence_Year :  <input type="number", name='a', placeholder="Occurrence_Year"> <br><br>
+                Occurrence_Month :  <input type="number", name='b', placeholder="Occurrence_Month" > <br><br>
+                Occurrence_Hour  :  <input type="number", name='c', placeholder="Occurrence_Hour"> <br><br>
+                Bike_Speed  :  <input type="number", name='d', placeholder="Bike_Speed"> <br><br>
+                Cost_of_Bike  :  <input type="number", name='e', placeholder="Cost_of_Bike"> <br><br>
+                Longitude  :  <input type="number", name='f', placeholder="Longitude"> <br><br>
+                Latitude  :  <input type="number", name='g', placeholder="Latitude"> <br><br>
+                Primary_Offence  :  <input type="text", name='h', placeholder="Primary_Offence"> <br><br><br></b>
+                Division  :  <input type="text", name='i', placeholder="Division"> <br><br>
+                Location_Type  :  <input type="text", name='j', placeholder="Location_Type"> <br><br>
+                Bike_Make  :  <input type="text", name='k', placeholder="Bike_Make"> <br><br>
+                Bike_Type  :  <input type="text", name='l', placeholder="Bike_Type"> <br><br>
+                Bike_Colour  :  <input type="text", name='m', placeholder="Bike_Colour"> <br><br>
+                NeighbourhoodName  :  <input type="text", name='n', placeholder="NeighbourhoodName"> <br><br><br><br> 
+            <input type="submit" , value='predict!' >
+        </form>
+
+    
+        
+    </center>
+    {{ prediction_text }}
+</div>   
+</body>
+</html>
